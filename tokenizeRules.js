@@ -22,8 +22,8 @@ class TokenizeRules {
         this.RuleOfNoteCaution = {mdKeyWord: ":::caution>", type: "noteCaution", isBlockLevel: true, checkFunction: this.noteCautionCheck}
         this.RuleOfUnOrderedList = {mdKeyWord: "- ", type: "unOrderedList", isBlockLevel: true, checkFunction: this.unOrderedListCheck, }
         this.RuleOfTabList = {mdKeyWord: "- ", type: "tabList", isBlockLevel: true, checkFunction: this.tabListCheck, }        
-        this.RuleOfUrlLink = {mdKeyWord: "[", type: "urlLink", isBlockLevel: false, checkFunction: this.urlLinkCheck, }
-        this.RuleOfImageLink = {mdKeyWord: "!", type: "imageLink", isBlockLevel: false, checkFunction: this.imageLinkCheck, }
+        //this.RuleOfUrlLink = {mdKeyWord: "[", type: "urlLink", isBlockLevel: false, checkFunction: this.urlLinkCheck, }
+        //this.RuleOfImageLink = {mdKeyWord: "!", type: "imageLink", isBlockLevel: false, checkFunction: this.imageLinkCheck, }
         this.RuleOfaccordion = {mdKeyWord: "+++", type: "accordion", isBlockLevel: true, checkFunction: this.accordionCheck, }
         this.RuleOfConversationOfRightSide = {mdKeyWord: "===>", type: "conversationOfRightSide", isBlockLevel: true, checkFunction: this.conversationOfRightSideCheck, }
         this.RuleOfConversationOfLeftSide = {mdKeyWord: "<===", type: "conversationOfLeftSide", isBlockLevel: true, checkFunction: this.conversationOfLeftSideCheck, }
@@ -59,8 +59,8 @@ class TokenizeRules {
             this.RuleOfStrong,
             this.RuleOfItalic,
             this.RuleOfStrongAndItalic,
-            this.RuleOfUrlLink,
-            this.RuleOfImageLink,
+            //this.RuleOfUrlLink,
+            //this.RuleOfImageLink,
             this.RuleOfEscape,
         ]
         
